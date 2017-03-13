@@ -41,7 +41,7 @@ Edge edges[maxm];
 int d[maxn],p[maxn];
 int head[maxn];
 int r,n,m;
-void addEdge(int u,int v,int len){ //ÕâÀïĞ´µÄÊÇÎŞÏòÍ¼£¬¿ÉÒÔ¸ù¾İÌâÒâµ÷Õû 
+void addEdge(int u,int v,int len){ //è¿™é‡Œå†™çš„æ˜¯æ— å‘å›¾ï¼Œå¯ä»¥æ ¹æ®é¢˜æ„è°ƒæ•´ 
 	edges[r++] = Edge(u,v,len,head[u]);
 	head[u] = r-1;
 	edges[r++] = Edge(v,u,len,head[v]);
@@ -84,7 +84,7 @@ int main(){
 			scanf("%d%d%d",&u,&v,&l);
 			addEdge(u,v,l);
 		}
-		Dijkstra(0);//¹¹ÔìDijkstraÊ÷
+		Dijkstra(0);//æ„é€ Dijkstraæ ‘
 		int qurey;scanf("%d",&qurey);
 		while(qurey--){
 			int t;scanf("%d",&t);
