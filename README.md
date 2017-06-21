@@ -1,2 +1,2 @@
 # Algo-Collection
-A collection of some basic algorithms with methods.
+一些基本的演算法方法的笔记
